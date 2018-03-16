@@ -92,7 +92,7 @@ extension ChaptersViewController: UIScrollViewDelegate {
             if scrollView.contentOffset.y > 0 {
                 // Normal behaviour if the `scrollView` isn't scrolled to the top
                 scrollView.bounces = true
-                delegate.isDismissEnabled = false
+//                delegate.isDismissEnabled = false
             } else {
                 if scrollView.isDecelerating {
                     // If the `scrollView` is scrolled to the top but is decelerating
@@ -106,7 +106,7 @@ extension ChaptersViewController: UIScrollViewDelegate {
                     // If the user has panned to the top, the scrollview doesnʼt bounce and
                     // the dismiss gesture is enabled.
                     scrollView.bounces = false
-                    delegate.isDismissEnabled = true
+//                    delegate.isDismissEnabled = true
                 }
             }
         }
